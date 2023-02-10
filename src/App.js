@@ -116,7 +116,7 @@ const App = ()=>{
       </div>
       <button className='span-two' onClick={()=>dispatch({type:Actions.CLEAR})}>AC</button>
       <button onClick={()=>dispatch({type:Actions.DELETE_DIGIT})}>DEL</button>
-      <OPbutton operation="÷" dispatch={dispatch} />
+      <OPbutton className="btn" operation="÷" dispatch={dispatch} />
       <Digitbutton digit= "1" dispatch={dispatch} />
       <Digitbutton digit= "2" dispatch={dispatch} />
       <Digitbutton digit= "3" dispatch={dispatch} />

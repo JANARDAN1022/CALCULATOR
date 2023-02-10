@@ -13,24 +13,35 @@ body{
     grid-template-rows: minmax(7rem,auto) repeat(5,6rem);
     justify-content: center;
 }
+
 .grid-calc > button {
     cursor: pointer;
     font-size: 20px;
-    border: 1px solid white;
+    border: 1px solid black;
     outline: none;
-    background-color: lightyellow;
+    background-color: black;
+    color:white;
 }
 .grid-calc > button:hover,
 .grid-calc > button:focus{
-    background-color: whitesmoke;
+    background-color: darkgoldenrod;
+    transition: all 300ms ease;
 }
 .span-two{
     grid-column: span 2;
 }
+.grid-calc>button.span-two{
+    background-color:rgba(184,134,11,0.6)
+}
+.grid-calc>button.span-two:hover{
+    background-color: darkgoldenrod;
+    transition: all 300ms ease;
+}
+
 
 .output {
     grid-column: 1/-1;
-    background-color:rgb(0,0,0,.75);
+    background-color:rgb(0,0,0);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -40,7 +51,7 @@ body{
     word-break: break-all;
 }
 .prev-op{
-    color:rgb(255,255,255,.75);
+    color:rgb(255,255,255,0.75);
     font-size: 1.5rem;
 }
 .curr-op{
